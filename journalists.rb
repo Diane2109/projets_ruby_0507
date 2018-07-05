@@ -40,7 +40,7 @@ def capitalize(array)
   print "Combien commencent par une majuscule ? "
   array_capitalize = []
   array.each do |value|
-    if value.downcase != value then array_capitalize << true
+    if value.first.upcase = value then array_capitalize << true
     end
   end
   number_of_capitalize = array_capitalize.size

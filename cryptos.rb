@@ -5,8 +5,10 @@ amounts = ["$6558.07", "$468.95", "$0.487526", "$762.84", "$8.86", "$85.26", "$0
 
 
 def hashing(array_1, array_2)
+  puts ""
   @my_hash = Hash[array_1.zip(array_2)]
-  puts @my_hash.size
+  taille = @my_hash.size
+  puts "La taille de mon hash est de #{taille}"
 end
 puts hashing(cryptos, amounts)
 
