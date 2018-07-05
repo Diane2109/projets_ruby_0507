@@ -2,6 +2,7 @@
 
 # Question 1
 def lenght_array(array)
+  puts ""
   print "Combien y a-t-il de journalistes ? "
   number_of_handles = array.size
   puts "Le tableau contient #{number_of_handles} handles twitter de journalistes."
@@ -35,9 +36,17 @@ end
 puts sum_aude(@journalists)
 
 # Question 4
-
-
-
+def capitalize(array)
+  print "Combien commencent par une majuscule ? "
+  array_capitalize = []
+  array.each do |value|
+    if value.downcase != value then array_capitalize << true
+    end
+  end
+  number_of_capitalize = array_capitalize.size
+  puts "Le tableau contient #{number_of_capitalize} handles qui commencent par une majuscule."
+end
+puts capitalize(@journalists)
 
 
 # Question 5

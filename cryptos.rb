@@ -93,19 +93,3 @@ def convert_to_number(hash)
   puts "La crypto qui a le cours le plus haut est #{max_array_6000[0]}."
 end
 puts convert_to_number(@my_hash)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-puts ""
